@@ -6,7 +6,12 @@ export default function Home({navigation}){
     return (
         <View style={styles.container}>
             <Text style={styles.text}>shashi</Text>
-            <Button title="Go to about page" onPress={()=>navigation.navigate("About")} />
+            <Button title="Go to about page"
+             onPress={()=>navigation.navigate("About"
+                ,{
+                name: "Shashi"
+                }
+            )} />
         </View>
         
     )

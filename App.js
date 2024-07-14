@@ -12,8 +12,10 @@ export default function App() {
   return (
    <NavigationContainer>
      <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="About" component={About} />
+      <Stack.Screen name="Home" component={Home}  />
+      <Stack.Screen name="About" component={About} initialParams={
+        {name: "Guest"}
+      }/>
       {/* <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Settings" component={Settings} /> */}
     </Stack.Navigator>

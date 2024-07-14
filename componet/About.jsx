@@ -1,9 +1,13 @@
-import {View,Text, StyleSheet} from  'react-native'
-export default function About(){
+import {View,Text, StyleSheet, Button} from  'react-native'
+export default function About({route,navigation}){
+    const {name} =route.params
 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>About shashi</Text>
+            <Text style={styles.text}>About {name}</Text>
+            <Button title='update name' onPress={()=>navigation.setParams({
+                name: "updated name"
+            })}/>
         </View>
         
     )
