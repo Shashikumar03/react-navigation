@@ -8,6 +8,7 @@ export default function About({route,navigation}){
             <Button title='update name' onPress={()=>navigation.setParams({
                 name: "updated name"
             })}/>
+             <Button title='data from about' onPress={()=>navigation.navigate("Home",{result:"data from about page"})}/>
         </View>
         
     )
